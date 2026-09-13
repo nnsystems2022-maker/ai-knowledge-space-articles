@@ -14,15 +14,17 @@ published: true
 
 Claude Code、Cursor、Codex CLI、Gemini CLI などに Firebase のコードを書かせていて、こんな経験はないでしょうか。
 
-- `permission-denied` が出たので聞いたら、セキュリティルールを `allow read: if true` に緩める提案が返ってきた
+- `permission-denied` が出たので聞いたら、Firestore のセキュリティルールを `allow read: if true` に緩める提案が返ってきた
+- Supabase で行が返ってこないので聞いたら、RLS を無効化する提案が返ってきた
 - 廃止されたはずの API を、何の迷いもなく提案された
-- 「効くはず」の対処を 3 回試して、3 回とも効かなかった
 
 AI が間違えるのは知識が足りないからではなく、**古い情報と新しい情報が同列に並んでいる**からです。Stack Overflow の 2019 年の回答と 2026 年の公式ドキュメントは、AI から見るとどちらも「もっともらしいテキスト」です。さらに「動くが危険な対処」は、動いてしまうがゆえに Web 上で否定されにくく、AI はそれを学習します。
 
 ## 作ったもの
 
 **ai-knowledge-space** は、AI コーディングツールが参照するための問題解決ナレッジベースです。人間が読む必要はありません（読めますが）。
+
+対象は Firebase・Supabase・Cloudflare Workers・Vercel/Next.js・OpenAI/Anthropic API・Google Apps Script で、順次広げていきます。
 
 蓄積するのは次の 3 種類だけです。
 
@@ -36,7 +38,7 @@ AI が間違えるのは知識が足りないからではなく、**古い情報
 
 AI がこれを読めば、危険な提案をする前に止まります。
 
-現在 149 件。Firebase・Supabase・Cloudflare Workers・Vercel/Next.js・OpenAI/Anthropic API・Google Apps Script をカバーしています。
+現在 150 件です。
 
 ## 使い方は 1 行
 
