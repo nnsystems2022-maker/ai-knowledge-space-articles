@@ -3,7 +3,7 @@ title: "AIコーディングツールが「自信を持って間違える」の�
 emoji: "🔍"
 type: "tech"
 topics: ["claudecode", "mcp", "firebase", "supabase", "ai"]
-published: false
+published: true
 ---
 
 :::message
