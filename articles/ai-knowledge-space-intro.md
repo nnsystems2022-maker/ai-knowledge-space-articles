@@ -12,7 +12,7 @@ published: false
 
 ## AI が間違えるとき、何が起きているか
 
-Claude Code や Cursor に Firebase のコードを書かせていて、こんな経験はないでしょうか。
+Claude Code、Cursor、Codex CLI、Gemini CLI などに Firebase のコードを書かせていて、こんな経験はないでしょうか。
 
 - `permission-denied` が出たので聞いたら、セキュリティルールを `allow read: if true` に緩める提案が返ってきた
 - 廃止されたはずの API を、何の迷いもなく提案された
@@ -40,7 +40,7 @@ AI がこれを読めば、危険な提案をする前に止まります。
 
 ## 使い方は 1 行
 
-Claude Code なら、登録ページでキーを発行して、次を実行するだけです。
+MCP 対応のツールなら使えます。Claude Code の場合は、登録ページでキーを発行して、次を実行するだけです。
 
 ```
 claude mcp add -s user --transport http ks-remote https://ks-remote.ks-mcp-remote.workers.dev/mcp --header "Authorization: Bearer <あなたのキー>"
@@ -77,7 +77,7 @@ claude mcp add -s user --transport http ks-remote https://ks-remote.ks-mcp-remot
 
 ## 参加してほしい人
 
-Claude Code や Cursor で Firebase・Supabase・Cloudflare・Vercel・LLM API を使っている開発者です。特に「効かなかった対処」「危なかった提案」の記憶がある方。それがこの空間で一番価値のある知見です。
+Claude Code、Cursor、Codex CLI、Gemini CLI などで Firebase・Supabase・Cloudflare・Vercel・LLM API を使っている開発者です。特に「効かなかった対処」「危なかった提案」の記憶がある方。それがこの空間で一番価値のある知見です。
 
 登録は無料、キー発行まで 5 分です。
 
